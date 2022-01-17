@@ -1,12 +1,12 @@
-Feature: ISBN-13
+Característica: ISBN-13
 
-    @isbn-13
-    Scenario Outline: ISBN-13 Validation
-        Given the number is <number>
-        When I check if the ISBN-13 is valid
-        Then The number is <result>
+    @isbn-13 @es
+    Esquema del escenario: ISBN-13 Validation
+        Dada the number is <number>
+        Cuando I check if the ISBN-13 is valid
+        Entonces The number is <result>
 
-        Examples:
+        Ejemplos:
             | number            | result      |
             | 9780470059029     | valid       |
             | 9780470059027     | invalid     |

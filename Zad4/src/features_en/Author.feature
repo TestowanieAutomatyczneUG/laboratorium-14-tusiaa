@@ -1,6 +1,6 @@
 Feature: Author
 
-    @author
+    @author @en
     Scenario Outline: Create a new author - Success
         Given name is <name>
         And surname is <surname>
@@ -13,7 +13,7 @@ Feature: Author
             | John  | Doe     | mail@pl  |
             | Jane  | Doe     | mail@pl  |
 
-    @author
+    @author @en
     Scenario Outline: Create a new author - Failure
         Given name is <name>
         And surname is <surname>

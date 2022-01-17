@@ -1,6 +1,6 @@
 Feature: Book
 
-    @book
+    @book @en
     Scenario Outline: Create a new book - Success
         Given title is <title>
         And ISBN is <isbn>
@@ -16,7 +16,7 @@ Feature: Book
             | The Lord of the Rings | 978-3-16-148410-0 | J.R.R. | Tolkien | autor@mail |
             | The Hobbit            | 9783161484100     | J.R.R. | Tolkien | autor@mail |
 
-    @book
+    @book @en
     Scenario Outline: Create a new book - Failure
         Given title is <title>
         And ISBN is <isbn>
@@ -34,7 +34,7 @@ Feature: Book
             | The Lord of the Rings | 978-3-16-148410-5 | J.R.R. | Tolkien | autor@mail |
             | The Hobbit            | 978316148410      | J.R.R. | Tolkien | autor@mail |
 
-    @book
+    @book @en
     Scenario Outline: Create a new book - Failure because of author
         Given title is <title>
         And ISBN is <isbn>
